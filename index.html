@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary SEO -->
+    <title>Dreamz | Cinematic Videographer, Drone Pilot & Photo Editor</title>
+    <meta name="description"
+        content="Dreamz – Professional videographer, drone pilot, and photo editor specializing in cinematic storytelling, aerial footage, and commercial color grading.">
+    <meta name="keywords"
+        content="Dreamz, videographer, drone pilot, photo editor, video editing, color grading, cinematic, Tanzania, portfolio">
+    <meta name="author" content="Dreamz Visuals">
+    <link rel="canonical" href="https://www.dreamzvisuals.com">
+
+    <!-- Open Graph (Facebook, WhatsApp, LinkedIn) -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.dreamzvisuals.com">
+    <meta property="og:title" content="Dreamz | Cinematic Videographer & Drone Pilot">
+    <meta property="og:description"
+        content="Elevating visual storytelling through high-end drone videography, cinematic editing, and dynamic content creation.">
+    <meta property="og:image" content="https://www.dreamzvisuals.com/hero-bg.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://www.dreamzvisuals.com">
+    <meta name="twitter:title" content="Dreamz | Cinematic Videographer & Drone Pilot">
+    <meta name="twitter:description"
+        content="Elevating visual storytelling through high-end drone videography, cinematic editing, and dynamic content creation.">
+    <meta name="twitter:image" content="https://www.dreamzvisuals.com/hero-bg.png">
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-brand"><a href="#home">Dreamz</a></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger"><i class="fa-solid fa-bars"></i></div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="#home" class="mobile-link">Home</a></li>
+            <li><a href="#about" class="mobile-link">About</a></li>
+            <li><a href="#portfolio" class="mobile-link">Portfolio</a></li>
+            <li><a href="#services" class="mobile-link">Services</a></li>
+            <li><a href="#contact" class="mobile-link">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero -->
+    <header id="home" class="hero">
+        <div class="hero-bg">
+            <img src="hero-bg.png" alt="Hero Background">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content reveal">
+            <h2 class="subtitle">Videographer • Drone Pilot • Video Editor</h2>
+            <h1 class="title">Capturing <br><span>The Unseen</span></h1>
+            <p class="description">Elevating visual storytelling through high-end drone videography, cinematic editing,
+                and dynamic content creation.</p>
+            <a href="#portfolio" class="btn btn-primary">View My Work <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-img reveal reveal-left">
+                    <img src="dreamz.png" alt="Dreamz Visuals Creator Profile">
+                    <div class="img-experience"><span class="years">7+</span><span
+                            class="text">Years<br>Experience</span></div>
+                </div>
+                <div class="about-text reveal reveal-right">
+                    <h4 class="section-subtitle">Behind the Lens</h4>
+                    <p>My name is director Damas Mkombo A.K.A Director Dreamz Specializing in high-end photo and video
+                        production, I blend artistic vision with technical creation
+                        precision to deliver stunning visuals. From commercial campaigns to breathless landscapes, I
+                        craft stories that move audiences.</p>
+                    <a href="DAMAS MKOMBO CV.pdf" target="_blank" class="btn btn-primary"
+                        style="margin-top: 1.5rem; margin-bottom: 1.5rem; margin-right: 1rem; display: inline-block;">View My CV <i
+                            class="fa-solid fa-file-pdf"></i></a>
+                    <a href="SMARTBUS INSIDE APP.pdf" target="_blank" class="btn btn-primary"
+                        style="margin-top: 1.5rem; margin-bottom: 1.5rem; display: inline-block;">View SmartBus App <i
+                            class="fa-solid fa-file-pdf"></i></a>
+
+                    <div class="skills-wrapper">
+                        <div class="skill-category" style="text-align: center;">
+                            <h5>Expertise</h5>
+                            <button class="filter-btn" id="expertise-toggle-btn"
+                                onclick="document.getElementById('expertise-tags-list').style.display = 'flex'; this.style.display = 'none';"
+                                style="margin-top: 1rem;">View Storytelling Activities <i
+                                    class="fa-solid fa-chevron-down"></i></button>
+                            <div id="expertise-tags-list" class="skill-tags"
+                                style="display: none; justify-content: center; flex-wrap: wrap; gap: 1rem; margin-top: 1rem;">
+                                <button class="filter-btn" onclick="this.classList.toggle('active')"><i
+                                        class="fa-solid fa-video"></i> Video Editing</button>
+                                <button class="filter-btn" onclick="this.classList.toggle('active')"><i
+                                        class="fa-solid fa-camera"></i> Photo Editing</button>
+                                <button class="filter-btn" onclick="this.classList.toggle('active')"><i
+                                        class="fa-solid fa-plane-up"></i> Drone Flying</button>
+                                <button class="filter-btn" onclick="this.classList.toggle('active')"><i
+                                        class="fa-solid fa-palette"></i> Color Grading</button>
+                                <button class="filter-btn" onclick="this.classList.toggle('active')"><i
+                                        class="fa-solid fa-film"></i> Cinematic Storytelling</button>
+                            </div>
+                        </div>
+                        <div class="skill-category" style="text-align: center; margin-top: 2.5rem;">
+                            <h5>Software Stack</h5>
+                            <div class="skill-tags"
+                                style="display: flex; justify-content: center; flex-wrap: wrap; gap: 1rem; margin-top: 1rem;">
+                                <button class="filter-btn"
+                                    onclick="this.classList.toggle('active'); this.innerText = this.classList.contains('active') ? 'Premiere Pro - 95%' : 'Premiere Pro'">Premiere
+                                    Pro</button>
+                                <button class="filter-btn"
+                                    onclick="this.classList.toggle('active'); this.innerText = this.classList.contains('active') ? 'After Effects - 85%' : 'After Effects'">After
+                                    Effects</button>
+                                <button class="filter-btn"
+                                    onclick="this.classList.toggle('active'); this.innerText = this.classList.contains('active') ? 'Photoshop / Lightroom - 90%' : 'Photoshop / Lightroom'">Photoshop
+                                    / Lightroom</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section alt-bg">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <h4 class="section-subtitle">Selected Works</h4>
+                <h2 class="section-title">Featured Projects</h2>
+            </div>
+
+            <div class="portfolio-filters reveal">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="camera">Camera Editings</button>
+                <button class="filter-btn" data-filter="drone">Drone Footage</button>
+                <button class="filter-btn" data-filter="photo">Photo Editing</button>
+            </div>
+
+            <div class="portfolio-grid">
+                <!-- Items -->
+                <div class="portfolio-item reveal" data-category="drone"
+                    onclick="openLightbox(this.querySelector('img').src)">
+                    <div class="item-img">
+                        <img src="hero-bg.png" alt="Urban Aerial Cinematic Thumbnail">
+                        <div class="item-overlay"><span class="category">drone footage</span>
+                            <h3 class="title">urban aerial cinematic</h3>
+                            <div class="view-btn"><i class="fa-solid fa-expand"></i> view</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item reveal" data-category="camera"
+                    onclick="openLightbox(this.querySelector('img').src)">
+                    <div class="item-img">
+                        <img src="alpha.jpg" alt="urban night">
+                        <div class="item-overlay"><span class="category">camera editings</span>
+                            <h3 class="title">night shift cinematic</h3>
+                            <div class="view-btn"><i class="fa-solid fa-expand"></i> view</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item reveal" data-category="photo"
+                    onclick="openLightbox(this.querySelector('img').src)">
+                    <div class="item-img">
+                        <img src="project3_1.jpg" alt="portrait retouching">
+                        <div class="item-overlay"><span class="category">photo editing</span>
+                            <h3 class="title">portrait retouching</h3>
+                            <div class="view-btn"><i class="fa-solid fa-expand"></i> view</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item reveal" data-category="photo"
+                    onclick="openLightbox(this.querySelector('img').src)">
+                    <div class="item-img">
+                        <img src="madame.jpg" alt="featured artwork">
+                        <div class="item-overlay"><span class="category">photo editing</span>
+                            <h3 class="title">featured artwork</h3>
+                            <div class="view-btn"><i class="fa-solid fa-expand"></i> view</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Services Section -->
+    <section id="services" class="section section-bg-img">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <h4 class="section-subtitle">What I Do</h4>
+                <h2 class="section-title">Creative Services</h2>
+            </div>
+            <div class="services-grid">
+                <a href="drone-service.html" class="service-card reveal video-card">
+
+
+                    <div class="card-content">
+                        <div class="icon"><i class="fa-solid fa-plane"></i></div>
+                        <h3>Drone Videography</h3>
+                        <p>Cinematic aerial views for campaigns and events.</p>
+                    </div>
+                </a>
+                <a href="video-service.html" class="service-card reveal">
+                    <div class="icon"><i class="fa-solid fa-film"></i></div>
+                    <h3>Video Editing</h3>
+                    <p>Professional cutting, sound design, and storytelling.</p>
+                </a>
+                <a href="grading-service.html" class="service-card reveal">
+                    <div class="icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                    <h3>Color Grading</h3>
+                    <p>Establish exact mood and look with Davinci Resolve.</p>
+                </a>
+                <a href="photo-service.html" class="service-card reveal">
+                    <div class="icon"><i class="fa-solid fa-camera-retro"></i></div>
+                    <h3>Photo Editing</h3>
+                    <p>High-end retouching for commercial use.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section section-bg-img">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <h4 class="section-subtitle">Client Stories</h4>
+                <h2 class="section-title">What They Say</h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card reveal">
+                    <div class="t-content">"The drone footage was absolutely stunning and highly professional."</div>
+                    <div class="t-client"><img src="testimonial-sarah.jpg" alt="Sarah Jenkins">
+                        <div class="t-info">
+                            <h4>Sarah Jenkins</h4><span>Marketing Dir</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card reveal">
+                    <div class="t-content">"Flawless and fast editing. They delivered exactly the mood we wanted."</div>
+                    <div class="t-client"><img src="testimonial-marcus.jpg" alt="Marcus Vance">
+                        <div class="t-info">
+                            <h4>Marcus Vance</h4><span>Director</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section alt-bg">
+        <div class="container contact-wrapper">
+            <div class="contact-info reveal reveal-left">
+                <h4 class="section-subtitle" style="text-transform: lowercase;">let's collaborate</h4>
+                <h2 class="section-title" style="text-transform: lowercase;">ready to create?</h2>
+                <ul class="contact-list">
+                    <li><i class="fa-solid fa-envelope"></i>
+                        <div><span style="text-transform: lowercase;">email</span><a
+                                href="mailto:ngaludamas20@gmail.com">ngaludamas20@gmail.com</a></div>
+                    </li>
+                    <li><i class="fa-solid fa-phone"></i>
+                        <div><span style="text-transform: lowercase;">call or whatsapp</span><a
+                                href="tel:+255713251664">+255 713 251 664</a></div>
+                    </li>
+                    <li><i class="fa-brands fa-instagram"></i>
+                        <div><span style="text-transform: lowercase;">instagram</span><a
+                                href="https://instagram.com/itsdreamz">@its_dreamz</a></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="contact-form reveal reveal-right">
+                <form id="contactForm">
+                    <div class="input-group"><input type="text" placeholder="your name" required></div>
+                    <div class="input-group"><input type="email" placeholder="email" required></div>
+                    <div class="input-group"><textarea rows="4" placeholder="message" required></textarea></div>
+                    <button type="submit" class="btn btn-primary" style="text-transform: lowercase;">send <i
+                            class="fa-solid fa-paper-plane"></i></button>
+                    <div id="form-response"
+                        style="display: none; margin-top: 1.5rem; text-align: center; font-weight: 500; font-family: var(--font-body); opacity: 0; transition: opacity 0.5s ease; border-radius: 12px; background: rgba(74, 222, 128, 0.1); padding: 1.5rem; border: 1px solid rgba(74, 222, 128, 0.2);">
+                        <div style="color: #f7f7fb;"><i class="fa-solid fa-circle-check"></i> message sent! i'll be in
+                            touch soon.</div>
+                        <div
+                            style="margin-top: 1rem; font-size: 0.95rem; font-style: italic; color: var(--text-muted); word-break: break-word; font-weight: 400;">
+                            "<span id="sent-message-text"></span>"</div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h2>Dreamz</h2>
+                    <p>Cinematic creator.</p>
+                </div>
+                <div class="footer-nav">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#services">Services</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-socials">
+                    <a href="#" title="Vimeo"><i class="fa-brands fa-vimeo-v"></i></a>
+                    <a href="#" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://instagram.com/itsdreamz" title="Instagram" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://wa.me/255713251664" title="WhatsApp" target="_blank"><i
+                            class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> Dreamz Visuals. All Rights Reserved.</p>
+                <a href="#home" class="back-to-top" title="Back to top"><i class="fa-solid fa-chevron-up"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox -->
+    <div class="lightbox-overlay" id="lightbox" onclick="closeLightbox()">
+        <button class="lightbox-close" onclick="closeLightbox()"><i class="fa-solid fa-xmark"></i></button>
+        <img id="lightbox-img" src="" alt="Full View">
+    </div>
+
+    <!-- Project Modal -->
+    <div class="modal-overlay" id="projectModal">
+        <div class="modal-container">
+            <button class="modal-close" onclick="closeProjectModal()"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-content" id="modalContent"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

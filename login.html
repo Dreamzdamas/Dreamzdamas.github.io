@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dreamz | Exclusive Access Gate</title>
+    
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Using the same styles as the main site -->
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        .login-section {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(to bottom, rgba(5, 10, 31, 0.8) 0%, rgba(5, 10, 31, 0.95) 100%), url('hero-bg.png');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .login-card {
+            background: var(--bg-card);
+            padding: 4rem 3rem;
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            width: 100%;
+            max-width: 450px;
+            text-align: center;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+            position: relative;
+            z-index: 2;
+        }
+
+        .login-card .logo {
+            font-family: var(--font-head);
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--text-main);
+            letter-spacing: 2px;
+            margin-bottom: 0.5rem;
+        }
+
+        .login-card p {
+            color: var(--text-muted);
+            margin-bottom: 2.5rem;
+            font-size: 0.95rem;
+            font-family: var(--font-body);
+        }
+
+        .login-form .input-group input {
+            background: rgba(0, 0, 0, 0.4);
+            text-align: center;
+        }
+
+        .login-form .input-group input:focus {
+            background: rgba(0, 0, 0, 0.6);
+        }
+
+        .error-message {
+            color: #ef4444;
+            font-size: 0.85rem;
+            margin-top: -1rem;
+            margin-bottom: 1rem;
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+
+    <section class="login-section">
+        <div class="login-card reveal active">
+            <div class="logo">Dreamz</div>
+            <p>Enter your access credentials to view the portfolio.</p>
+            
+            <form class="login-form" id="loginForm">
+                <div class="input-group">
+                    <input type="text" id="username" placeholder="Username or Access Code" required>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="password" placeholder="Password" required>
+                </div>
+                
+                <div class="error-message" id="errorMessage">Invalid credentials. Please try again.</div>
+
+                <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center; border-radius: 50px;">
+                    Enter <i class="fa-solid fa-lock-open" style="margin-left: 8px;"></i>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <script>
+        // Frontend logic to simulate authentication process
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // In a real full-stack setup, we would POST to our backend (server.js).
+            // For demonstration, we simply redirect to the main site:
+            
+            const btn = this.querySelector('button');
+            const originalText = btn.innerHTML;
+            btn.innerHTML = 'Authenticating... <i class="fa-solid fa-circle-notch fa-spin"></i>';
+            btn.style.opacity = '0.8';
+
+            setTimeout(() => {
+                // Simulate successful login by letting them through to index.html
+                window.location.href = 'index.html';
+            }, 1200);
+        });
+    </script>
+</body>
+</html>

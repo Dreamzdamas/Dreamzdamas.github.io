@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Editing | Dreamz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="alt-bg">
+    <nav class="navbar scrolled">
+        <div class="nav-brand"><a href="index.html#home">Dreamz</a></div>
+        <ul class="nav-links">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#portfolio">Portfolio</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero" style="height: 50vh;">
+        <div class="hero-bg">
+            <video src="Equipment for video and photography in a close shot - Free Stock Video.mp4" autoplay muted loop playsinline></video>
+            <div class="hero-overlay" style="background: linear-gradient(to bottom, rgba(5, 10, 31, 0.4) 0%, rgba(5, 10, 31, 1) 100%);"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="title">video <span>editing</span></h1>
+            <p class="description">professional cutting, sound design, and cinematic storytelling.</p>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-header text-center">
+                <h4 class="section-subtitle">portfolio</h4>
+                <h2 class="section-title">editing showcase</h2>
+            </div>
+            
+            <div class="services-showcase-grid" style="display: grid; gap: 2rem; grid-template-columns: 1fr;">
+                <div class="service-card reveal active" style="background: var(--bg-card); border-radius: 8px; overflow: hidden; border: 1px solid rgba(255, 255, 255, 0.05); text-align: left;">
+                    <video src="Equipment for video and photography in a close shot - Free Stock Video.mp4" controls style="width: 100%; height: 400px; object-fit: cover; background: #000;"></video>
+                    <div style="padding: 2rem;">
+                        <h3 style="color: #fff; margin-bottom: 0.5rem; text-transform: lowercase;">Commercial & Corporate Editing</h3>
+                        <p style="color: var(--text-muted); font-size: 1.05rem;">Seamlessly blending footage, music, and voiceovers to craft compelling campaigns that elevate your brand's presence.</p>
+                    </div>
+                </div>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                    <div class="service-card reveal active" style="background: var(--bg-card); border-radius: 8px; overflow: hidden; border: 1px solid rgba(255, 255, 255, 0.05); text-align: left;">
+                        <video src="Night_Shift__Dar-Mbeya-Mbalizi_Kila_siku_Saa_8_00_Mchana__God_Bless_Our_Journey🙏.mp4" controls style="width: 100%; height: 250px; object-fit: cover; background: #000; filter: contrast(1.3) saturate(1.7) sepia(0.2) hue-rotate(-5deg) brightness(1.05); transition: filter 0.8s ease;" onmouseover="this.style.filter='none';" onmouseout="this.style.filter='contrast(1.3) saturate(1.7) sepia(0.2) hue-rotate(-5deg) brightness(1.05)';" title="Hover to see original ungeaded video"></video>
+                        <div style="padding: 1.5rem;">
+                            <h3 style="color: #fff; margin-bottom: 0.5rem; font-size: 1.2rem; text-transform: lowercase;">Color Grading Studio</h3>
+                            <p style="color: var(--text-muted); font-size: 0.95rem;">Establishing the exact mood and cinematic aesthetics required for high-end commercial delivery. <em>(Hover video to see original LOG footage)</em></p>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card reveal active" style="background: var(--bg-card); border-radius: 8px; overflow: hidden; border: 1px solid rgba(255, 255, 255, 0.05); text-align: left;">
+                        <video src="Busy intersection aerial view - Free Stock Video.mp4" controls style="width: 100%; height: 250px; object-fit: cover; background: #000;"></video>
+                        <div style="padding: 1.5rem;">
+                            <h3 style="color: #fff; margin-bottom: 0.5rem; font-size: 1.2rem; text-transform: lowercase;">Dynamic Action Cutting</h3>
+                            <p style="color: var(--text-muted); font-size: 0.95rem;">Expert pacing and kinetic motion tracking customized for drone, sports, and action-packed footage.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center" style="margin-top: 4rem;">
+                <a href="index.html#services" class="btn btn-primary"><i class="fa-solid fa-arrow-left"></i> back to services</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; Dreamz Visuals. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
